@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitcoinUTXOSlicer", "BitcoinUTXOSlicer\BitcoinUTXOSlicer.csproj", "{72BB3349-80A8-49A6-9F20-CA99EE0FFF49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderedBitcoinBlockchainParser", "OrderedBitcoinBlockchainParser\OrderedBitcoinBlockchainParser.csproj", "{B080AA6A-9BCB-404F-83F9-CB6FC58B650F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTXOSlicerTest", "UTXOSlicerTest\UTXOSlicerTest.csproj", "{8BACDF3C-67C9-42C4-A07E-2FC9DF811633}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72BB3349-80A8-49A6-9F20-CA99EE0FFF49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72BB3349-80A8-49A6-9F20-CA99EE0FFF49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72BB3349-80A8-49A6-9F20-CA99EE0FFF49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72BB3349-80A8-49A6-9F20-CA99EE0FFF49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B080AA6A-9BCB-404F-83F9-CB6FC58B650F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B080AA6A-9BCB-404F-83F9-CB6FC58B650F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B080AA6A-9BCB-404F-83F9-CB6FC58B650F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B080AA6A-9BCB-404F-83F9-CB6FC58B650F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BACDF3C-67C9-42C4-A07E-2FC9DF811633}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BACDF3C-67C9-42C4-A07E-2FC9DF811633}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BACDF3C-67C9-42C4-A07E-2FC9DF811633}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BACDF3C-67C9-42C4-A07E-2FC9DF811633}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF7950FD-8616-4C8F-BF83-DF7608A8B9F3}
+	EndGlobalSection
+EndGlobal
