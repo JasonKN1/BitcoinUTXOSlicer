@@ -10,10 +10,10 @@ using OrderedBitcoinBlockchainParser;
 
 namespace BitcoinUTXOSlicer
 {
-    public class UTXOSlicer_Class
+    public class BitcoinUTXOSlicer_Class
     {
         //和OrderedBlockchainParser_Class相关成员
-        OrderedBlockchainParser_Class orderedBlockchainParser;
+        OrderedBitcoinBlockchainParser_Class orderedBlockchainParser;
         public string blockchainFilePath = @".\";               //区块链文件路径        
         public string blockProcessContextFilePath = @".\";      //区块解析中断时的上下文(程序状态)文件路径
         public string blockProcessContextFileName = null;       //区块解析中断时的上下文(程序状态)文件
@@ -34,8 +34,8 @@ namespace BitcoinUTXOSlicer
         //最近的切片时间
         DateTime recentlySliceDateTime;
 
-        public UTXOSlicer_Class() { }
-        public UTXOSlicer_Class(string blockchainFilePath, string blockProcessContextFilePath, string blockProcessContextFileName,
+        public BitcoinUTXOSlicer_Class() { }
+        public BitcoinUTXOSlicer_Class(string blockchainFilePath, string blockProcessContextFilePath, string blockProcessContextFileName,
                                 string UtxoSliceFilePath, string UtxoSliceFileName, string OpReturnFilePath,
                                 string sliceIntervalTimeType, int sliceIntervalTime, DateTime endTime, int endBlockHeight)
         {
@@ -53,12 +53,12 @@ namespace BitcoinUTXOSlicer
 
             if (UtxoSliceFileName == null || blockProcessContextFileName == null)
             { //从第0个块开始
-                orderedBlockchainParser = new OrderedBlockchainParser_Class(blockchainFilePath, blockProcessContextFilePath, null);
+                orderedBlockchainParser = new OrderedBitcoinBlockchainParser_Class(blockchainFilePath, blockProcessContextFilePath, null);
                 recentlySliceDateTime = orderedBlockchainParser.recentlySliceDateTime;
             }
             else
             { //从中断处恢复
-                orderedBlockchainParser = new OrderedBlockchainParser_Class(blockchainFilePath, blockProcessContextFilePath, blockProcessContextFileName);
+                orderedBlockchainParser = new OrderedBitcoinBlockchainParser_Class(blockchainFilePath, blockProcessContextFilePath, blockProcessContextFileName);
                 recentlySliceDateTime = orderedBlockchainParser.recentlySliceDateTime;
                 restore_UTXOSlicerContextForProgram();
             }

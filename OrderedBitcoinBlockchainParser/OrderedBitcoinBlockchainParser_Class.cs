@@ -11,7 +11,7 @@ using System.Text;
 
 namespace OrderedBitcoinBlockchainParser
 {
-    public class OrderedBlockchainParser_Class
+    public class OrderedBitcoinBlockchainParser_Class
     {
         public string blockchainFilePath = @".\";           //区块链文件路径        
         public string blockProcessContextFilePath = @".\";  //区块解析中断时的上下文(程序状态)文件路径
@@ -34,14 +34,14 @@ namespace OrderedBitcoinBlockchainParser
         public bool missingBlockFile = false;
 
         //全部使用默认值，并且不从中断处恢复
-        public OrderedBlockchainParser_Class()
+        public OrderedBitcoinBlockchainParser_Class()
         {
             ParserBlock genesisBlock = get_GenesisBlock(true);
             initialize_BlockQueuePooling(genesisBlock);
         }
 
         //主要使用                                      
-        public OrderedBlockchainParser_Class(string blockchainFilePath, string blockProcessContextFilePath,
+        public OrderedBitcoinBlockchainParser_Class(string blockchainFilePath, string blockProcessContextFilePath,
             string blockProcessContextFileName = null, int blockQueuePoolingSize = 10)
         {
             this.blockchainFilePath = blockchainFilePath;
